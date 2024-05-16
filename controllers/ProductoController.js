@@ -22,7 +22,7 @@ exports.mostrarProductos = async(req,res) => {
     try {
 
         const productos = await Producto.find();
-        res.json(productos);
+        res.json({productos});
         
     } catch (error) {
         console.log(error)
